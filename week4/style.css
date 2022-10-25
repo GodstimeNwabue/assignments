@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.car-brands {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.car-brands_items {
+    padding: 30px;
+}
+
+/* 
+.check-out a {
+    color: black;
+} */
+
+.car-brands_items .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.car-brands_items p {
+    padding-bottom: 3rem;
+}
+
+.car-brands_items .left,
+.car-brands_items .right,
+.car-brands_items .center {
+    padding: 30px;
+    height: auto;
+}
+
+.car-brands_items .left {
+    background-color: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.car-brands_items .center {
+    background-color: hsl(184, 100%, 22%);
+    padding-right: 10px;
+}
+
+.car-brands_items .right {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: hsl(179, 100%, 13%);
+}
+
+.car-brands_items .content img {
+    padding-top: 30px;
+}
+
+.car-brands_items h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+.car-brands_items p {
+    font-size: 15px;
+    line-height: 25px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.car-brands_items .content .btn {
+    padding-top: 40px;
+}
+
+.car-brands_items .btn-orange {
+    color: hsl(31, 77%, 52%);
+}
+
+.car-brands_items .btn-blue {
+    color: hsl(184, 100%, 22%);
+}
+
+.car-brands_items .btn-darkblue {
+    color: hsl(179, 100%, 13%);
+}
+
+.car-brands_items button {
+    padding: 12px 30px;
+    border-radius: 35px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid white;
+    margin-bottom: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.car-brands_items button:hover {
+    border: 2px solid white;
+    color: white;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+
+/*Responsivesness on flexbox page*/
+@media (max-width: 520px) {
+    .car-brands_items {
+        background-size: cover;
+    }
+
+    .car-brands_items .content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .car-brands_items .left,
+    .car-brands_items .right,
+    .car-brands_items .center {
+        height: auto;
+    }
+
+    .car-brands_items .left {
+        width: 100%;
+        border-radius: 10px;
+        padding: 30px;
+    }
+
+    .car-brands_items .center {
+        width: 100%;
+        border-radius: 10px;
+        padding: 30px;
+    }
+
+    .car-brands_items .right {
+        width: 100%;
+        border-radius: 10px;
+        padding: 30px;
+    }
+
+    .car-brands_items button {
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 772px) and (min-width: 520px) {
+
+    .car-brands_items .left,
+    .car-brands_items .right,
+    .car-brands_items .center {
+        height: auto;
+    }
+
+    .right {
+        margin-top: 2rem;
+        border-radius: 10px;
+    }
+
+    .center {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px
+    }
+
+}
+
+@media screen and (max-width: 1560px) and (min-width: 773px) {
+
+    .car-brands_items .left,
+    .car-brands_items .right,
+    .car-brands_items .center {
+        height: auto;
+    }
+}
+
+/*For grid template layout*/
+.layout-box {
+    background-color: rgb(33, 33, 39);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.layout-box .check-out a {
+    color: white;
+}
+
+.layout-box main {
+    display: grid;
+    grid-template-areas:
+        'a a a b'
+        'c c d d'
+        'c c e e'
+    ;
+    gap: 1rem;
+    width: 71%;
+}
+
+.layout-box main div {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+}
+
+.item-a {
+    grid-area: a;
+    background-color: red;
+    height: 24vh;
+}
+
+.item-b {
+    grid-area: b;
+    background-color: orange;
+}
+
+.item-c {
+    grid-area: c;
+    background-color: green;
+}
+
+.item-d {
+    grid-area: d;
+    background-color: lightseagreen;
+    height: 20vh;
+}
+
+.item-e {
+    grid-area: e;
+    background-color: lightseagreen;
+    height: 20vh;
+}
