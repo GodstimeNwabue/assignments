@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 1px 8px #ddd;
+}
+
+#nav-title {
+    font-size: 1.5em;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 2.0;
+}
+
+header li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #555;
+    transition: all 0.3s ease 0s;
+}
+
+header a:hover {
+    color: rgb(239, 14, 14);
+    cursor: pointer;
+}
+
+/*Introduction*/
+.intro {
+    padding: 20px 50px;
+    margin-bottom: 20px;
+}
+
+.me-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.me-section .text-big {
+    font-size: 1.75rem;
+}
+
+.me-section .image-box img {
+    width: 50%;
+    border-radius: 70%;
+}
+
+.intro .me-section ul {
+    align-self: center;
+    list-style: none;
+    line-height: 2.1;
+
+}
+
+.intro .me-section .image-box {
+    text-align: center;
+    width: 35%;
+}
+
+.intro .info-buttons {
+    margin-top: 1.2rem;
+}
+
+.intro .info-buttons .right,
+.intro .info-buttons .left {
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.intro .info-buttons .left {
+    margin-left: 0.6rem;
+    background-color: brown;
+    color: white;
+}
+
+.intro .info-buttons .right {
+    opacity: 0.8;
+}
+
+/*Section on About me*/
+.about-section {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    padding: 20px 50px;
+}
+
+.about-section a {
+    color: black;
+    text-decoration: underline #6A0000;
+}
+
+.about-section h1 {
+    margin-bottom: 1.5rem;
+}
+
+.about-section ul li {
+    line-height: 2;
+    list-style: none;
+}
+
+.about-section ul li strong {
+    font-size: 1.2rem;
+}
+
+/*Section on my services*/
+.my_services {
+    padding: 20px 50px;
+    text-align: center;
+}
+
+.my_services a {
+    color: black;
+    text-decoration: underline #6A0000;
+}
+
+.my_services_layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    margin-top: 2.3rem;
+    margin-bottom: 2.5rem;
+}
+
+.my_services_box {
+    width: 27%;
+    padding: 1.2rem 1rem;
+    box-shadow: 1px 1px 7px #897777;
+    border-radius: 10px;
+    /* background-image: url(./images/Headshot_11zon-removebg-preview\ \(1\).png);
+    background-position: center;
+    background-size: cover; */
+}
+
+.my_services_box h2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/*Section on Recent Projects*/
+.projects {
+    padding: 20px 50px;
+}
+
+.projects-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-head button {
+    background-color: brown;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.projects_box a {
+    text-decoration: none;
+}
+
+.projects_box h3 {
+    padding-bottom: 1rem;
+    color: black;
+    cursor: pointer;
+}
+
+.projects_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.projects_box .projects_box_display {
+    padding: 1.3rem 1rem;
+    box-shadow: 1px 1px 7px #897777;
+    border-radius: 10px;
+}
+
+/*section on footer*/
+footer {
+    padding: 20px 50px;
+    box-shadow: 0 1px 8px #ddd;
+    background-color: white;
+}
+
+footer .contact-section {
+    padding-top: 0.5rem;
+}
+
+footer .text-box {
+    border-left: 3px solid brown;
+    padding-left: 2px;
+    margin-bottom: 10px;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+footer .contact-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    margin-right: 10px;
+}
+
+footer .tags {
+    display: flex;
+}
+
+/*Responsiveness*/
+@media (max-width: 403px) {
+    header {
+        flex-direction: column;
+    }
+
+    /*Responsiveness on intro section*/
+    .intro {
+        text-align: center;
+    }
+
+    .intro .info-buttons .right,
+    .intro .info-buttons .left {
+        width: 100%;
+    }
+
+    .intro .info-buttons .left {
+        margin-left: 0;
+    }
+
+    .intro .info-buttons .right {
+        margin-bottom: 1rem;
+    }
+
+    footer .text-box {
+        padding-left: 0;
+        text-align: center;
+        border-radius: 50% 50% 50% 50%;
+    }
+
+    footer .contact-details {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-details .tags {
+        line-height: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-head {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-head_headline {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .my_services_box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 629px) {
+    .projects_box {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 815px) and (min-width:406px) {
+    .intro .me-section ul {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 816px) and (min-width:501px) {
+    .my_services_box {
+        width: 44%;
+    }
+}
+
+@media screen and (max-width: 790px) and (min-width: 630px) {
+    .projects_box {
+        flex-wrap: wrap;
+    }
+
+    .projects_box .projects_box_display {
+        width: 39%;
+    }
+}
+
+@media (max-width: 815px) {
+    #nav-title {
+        font-size: 1.3rem;
+    }
+
+    .intro .me-section .image-box {
+        margin-top: 5rem;
+    }
+
+    .intro .me-section .image-box {
+        width: 100%;
+    }
+
+    .me-section {
+        flex-direction: column;
+    }
+
+    footer .contact-details {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    footer .text-box {
+        text-align: center;
+        border-radius: 50% 50% 50% 50%;
+        border-width: 36px;
+    }
+}
+
+/*Section on contact page*/
+.page-holder {
+    padding: 0px 40px;
+
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="password"],
+.form-row select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: 0;
+    border-radius: 4px;
+}
+
+label {
+    line-height: 2.0rem;
+}
+
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-row .input-box {
+    width: 48%;
+}
+
+.button {
+    border-radius: 10px 0px;
+    width: 222px;
+    height: 40px;
+    background-color: rgb(156, 112, 112);
+    font-weight: bolder;
+    font-size: 18px;
+    color: blanchedalmond;
+    border: brown;
+}
+
+input[type="button"]:hover {
+    background: rgb(163, 71, 71);
+    border: 1px solid brown;
+    border-radius: 10px 0px;
+    width: 222px;
+    height: 40px;
+    cursor: pointer;
+    color: blanchedalmond;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    outline: none;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2rem 0rem;
+}
