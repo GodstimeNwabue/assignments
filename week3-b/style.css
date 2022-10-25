@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+}
+
+/*Registration to sign up page*/
+.source-files {
+    text-decoration: underline black;
+}
+
+.source-files h1 {
+    padding: 0px 1.5rem;
+    text-align: end;
+}
+
+/* .sign-section {
+    height: 100vh;
+    padding: 40px;
+} */
+
+
+.logo-section {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="password"],
+.form-row input[type="color"],
+input[type="country"],
+input[type="date"],
+.form-row input[type="phone number"],
+.form-row select {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: 0;
+    border-radius: 4px;
+}
+
+input[type="color"] {
+    height: 40px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="password"],
+input[type="country"],
+input[type="date"],
+.form-row input[type="phone number"],
+.form-row select {
+    padding: 10px;
+}
+
+label {
+    line-height: 2.0rem;
+}
+
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-row .input-box {
+    width: 48%;
+}
+
+.button {
+    border-radius: 10px 0px;
+    width: 222px;
+    height: 40px;
+    background-color: rgb(156, 112, 112);
+    font-weight: bolder;
+    font-size: 18px;
+    color: blanchedalmond;
+    border: brown;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: rgb(163, 71, 71);
+    border: 1px solid brown;
+    border-radius: 10px 0px;
+    width: 222px;
+    height: 40px;
+    cursor: pointer;
+    color: blanchedalmond;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.sign-section p,
+.login-section p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.sign-section a,
+.login-section a {
+    color: brown;
+    font-weight: bold;
+}
+
+/*design on login form page*/
+.login-section {
+    padding: 20px 50px;
+    margin-bottom: 30px;
+    height: 68vh;
+}
