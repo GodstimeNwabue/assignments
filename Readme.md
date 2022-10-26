@@ -6,7 +6,7 @@ Thanks for checking this project out
 
 ## Where to find everything
 
-Be creative on implementing yours with the images inside the `/week3` folder. Figure out a template for mobile view
+Be creative on implementing yours with the images inside the `week3` branch. Figure out a template for mobile view
 
 The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
 
