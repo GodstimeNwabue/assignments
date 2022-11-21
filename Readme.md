@@ -26,9 +26,7 @@ Check out the hosted page for `week3` on [portfolio](https://replit.com/@Godstim
 
 Also check out the hosted page for `week3-b` on [form](https://replit.com/@GodstimeNwabue/Registrationpage?v=1)
 
-## Please note
-
-Week3 is for a simple static portfoli page
+## Week3 is for a simple static portfoli page
 
 Build a simple HTML & CSS-driven website with a few linked pages and styled content.
 
@@ -52,7 +50,7 @@ Message
 Hint Searching for designs online will give you a better understanding of a beautiful design.
 
 
-Week3-b is for form
+## Week3-b is for form
 
 Create the following pages using HTML CSS
 
